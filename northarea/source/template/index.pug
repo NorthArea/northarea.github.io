@@ -1,0 +1,150 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="description" content="")
+    meta(name="author" content="")
+    title NorthArea
+    link(href="css/style.css" rel="stylesheet")
+    style.
+      body {
+        padding-top: 54px;
+      }
+      
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+      
+      .portfolio-item {
+        margin-bottom: 30px;
+      }
+      
+      .pagination {
+        margin-bottom: 30px;
+      }
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href="#") NorthArea
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href="https://github.com/NorthArea")
+                | Github
+                span.sr-only (current)
+          //
+            li.nav-item
+              a.nav-link(href="#") About
+            li.nav-item
+              a.nav-link(href="#") Services
+            li.nav-item
+              a.nav-link(href="#") Contact
+    // Page Content
+    .container
+      // Page Heading
+      h1.my-4
+        | Portfolio
+      .row
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/fashion/index.html", target="_blank")
+              img.card-img-top(src="img/fashion.jpg" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/fashion/index.html", target="_blank") Fashion
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/photography/index.html", target="_blank")
+              img.card-img-top(src="img/photography.jpg" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/photography/index.html", target="_blank") Photography
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/apptheme/index.html", target="_blank")
+              img.card-img-top(src="img/apptheme.jpg" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/apptheme/index.html", target="_blank") Apptheme
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/support/index.html", target="_blank")
+              img.card-img-top(src="img/support.jpg" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/support/index.html", target="_blank") Support
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/travel/index.html", target="_blank")
+              img.card-img-top(src="img/travel.jpg" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/travel/index.html", target="_blank") Travel
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/parallax/index.html", target="_blank")
+              img.card-img-top(src="img/parallax.jpg" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/parallax/index.html", target="_blank") Parallax
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/contact-form/index.html", target="_blank")
+              img.card-img-top(src="img/contact-form.jpg" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/contact-form/index.html", target="_blank") Contact form
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/")
+              img.card-img-top(src="https://placehold.it/700x400" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/") Empty
+              p.card-text
+        .col-lg-4.col-sm-6.portfolio-item
+          .card.h-100
+            a(href="https://northarea.github.io/")
+              img.card-img-top(src="https://placehold.it/700x400" alt="")
+            .card-body
+              h4.card-title
+                a(href="https://northarea.github.io/") Empty
+              p.card-text
+      // /.row
+      //
+        // Pagination
+        ul.pagination.justify-content-center
+          li.page-item
+            a.page-link(href="#" aria-label="Previous")
+              span(aria-hidden="true") «
+              span.sr-only Previous
+          li.page-item
+            a.page-link(href="#") 1
+          li.page-item
+            a.page-link(href="#") 2
+          li.page-item
+            a.page-link(href="#") 3
+          li.page-item
+            a.page-link(href="#" aria-label="Next")
+              span(aria-hidden="true") »
+              span.sr-only Next
+    // /.container
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright © NorthArea 2018
+      // /.container
+    script(src="js/main.js")
