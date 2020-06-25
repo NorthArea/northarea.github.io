@@ -1,0 +1,35 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Geocode App
+    link(rel='stylesheet', href='assets/css/framework.css')
+    script(src='https://unpkg.com/axios/dist/axios.min.js')
+  body(style="display:flex;min-height: 100vh;flex-direction: column;")
+    .container(style="flex:1 0 auto;")
+      h2#text-center Геолокационные данные: 
+      form#location-form
+        .form-row 
+          .form-group.col-md-12
+            input#location-input.form-control.form-control-lg(type='text',placeholder="Новосибирск...")
+          .form-group.col-md-6
+            input#geolocation-latitude.form-control(type="text", placeholder="Широта:")
+          .form-group.col-md-6
+            input#geolocation-longitude.form-control(type="text", placeholder="Долгота:")
+          .form-group.col-md-3
+            button.btn.btn-primary.btn-block(type='submit') По наименованию
+          .form-group.col-md-3
+            #geolocation-form.btn.btn-primary.btn-block По координатам
+          .form-group.col-md-6
+            #clean-form.btn.btn-primary.btn-block Очистить
+        #formatted-address.card-block
+      #address-components.card-block
+      #geometry.card-block
+      script(src="assets/js/bundle.js")
+    footer(style="text-align:center")
+      .container
+        a(href="https://northarea.ru/",target="_blank") NorthArea.ru
+        |&nbsp|&nbsp
+        a(href="https://github.com/NorthArea/",target="_blank") Github
+        |&nbsp &copy 2018
