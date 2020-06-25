@@ -1,0 +1,49 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Apex Web Design
+    link(rel='stylesheet', href='css/style.css')
+  body
+    h1.brand
+      span Apex 
+      | Web Design
+    .container
+      .row.wrapper.animated.bounceInLeft
+        .col-md-6.company.company-info
+          h3 Apex Web Design
+          ul
+            li г.Город ул.Улица
+            li +7(952)933-85-47
+            li web@northarea.ru
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ad83ae3e3a13c3a69428ff96564aca6fb1e17ddbe0a849db0eeac79bfb91bd7&amp;source=constructor" frameborder="0"></iframe>
+        .col-md-6.company.company-contact
+          h3 Напишите нам
+          .alert Your message has been sent
+          form#contactForm
+            p
+              label Имя
+              input(type="text", name="name",id="name")
+            p
+              label Организация
+              input(type="text", name="company",id="company")
+            p
+              label Email
+              input(type="text", name="email",id="email")
+            p
+              label Телефон
+              input(type="text", name="phone",id="phone")
+            p.full
+              label Текст сообщения
+              textarea(type="text", name="name", rows="5",id="message")
+            p.full
+              button(type="submit") Отправить
+    //script(src="https://www.gstatic.com/firebasejs/5.0.0/firebase.js")
+    script(src="js/main.js")
+    footer(style="text-align:center")
+      .container
+          a(href="https://northarea.ru/",target="_blank") NorthArea
+          |&nbsp|&nbsp
+          a(href="https://github.com/NorthArea/",target="_blank") Github
+          |&nbsp &copy 2018 

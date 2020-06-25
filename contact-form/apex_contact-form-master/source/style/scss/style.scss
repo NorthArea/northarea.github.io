@@ -1,0 +1,107 @@
+// Function
+@function set-text-color($bg-color) {
+  @if(lightness($bg-color) > 50) {
+    @return #000;
+  }
+  @else {
+    @return #fff;
+  }
+}
+
+// Variables
+$primary: #92bde7;
+$secondary: #c9e6ff;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #92bde7;
+  color: set-text-color($primary);
+  line-height: 1.5;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+  margin:0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+  span {
+    color: white;
+  }
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.company {
+  padding: 1em;
+}
+
+.company-info {
+  background: $secondary;
+  h3,
+  ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+}
+
+.company-contact {
+  background: #f9feff;
+  form {
+    label {
+      width: 100%;
+      color: #485e74;
+    }
+    p {
+      margin: 0;
+    }
+    button,
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5em;
+      border: 1px solid $secondary;
+    }
+    input,
+    textarea {
+      font-size: 1.1rem;
+    }
+    button {
+      background: $secondary;
+      border: 0;
+      text-transform: uppercase;
+    }
+    button:hover,
+    button:focus {
+      background: $primary;
+      color: white;
+      outline: 0;
+      transition: background-color .3s ease-out;
+    }
+  }
+}
+
+.alert {
+  display:none;
+}
+
+iframe {
+  width: 100%;
+  height: 20rem
+}
+
+@media(max-width:700px) {
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}

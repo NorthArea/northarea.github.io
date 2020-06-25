@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #92bde7;
+  color: #000;
+  line-height: 1.5;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.brand {
+  text-align: center; }
+  .brand span {
+    color: white; }
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
+
+.company {
+  padding: 1em; }
+
+.company-info {
+  background: #c9e6ff; }
+  .company-info h3,
+  .company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+
+.company-contact {
+  background: #f9feff; }
+  .company-contact form label {
+    width: 100%;
+    color: #485e74; }
+  .company-contact form p {
+    margin: 0; }
+  .company-contact form button,
+  .company-contact form input,
+  .company-contact form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #c9e6ff; }
+  .company-contact form input,
+  .company-contact form textarea {
+    font-size: 1.1rem; }
+  .company-contact form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase; }
+  .company-contact form button:hover,
+  .company-contact form button:focus {
+    background: #92bde7;
+    color: white;
+    outline: 0;
+    transition: background-color .3s ease-out; }
+
+.alert {
+  display: none; }
+
+iframe {
+  width: 100%;
+  height: 20rem; }
+
+@media (max-width: 700px) {
+  iframe {
+    width: 100%;
+    height: auto; } }
+
+/*# sourceMappingURL=style.css.map */
