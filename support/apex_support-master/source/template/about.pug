@@ -1,0 +1,35 @@
+extends partials/layout.pug
+block variables
+  - var title = "О нас"
+  - var currentUrl = "/about"
+block content
+  main.main_about
+    .container
+      h1.display-4 О нас
+      .row
+        .col-md-4
+          #list-tab.list-group(role='tablist')
+            a#list-home-list.list-group-item.list-group-item-action.active(data-toggle='list', href='#list-home', role='tab', aria-controls='home') Вкладка #1
+            a#list-profile-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-profile', role='tab', aria-controls='profile') Вкладка #2
+            a#list-messages-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-messages', role='tab', aria-controls='messages') Вкладка #3
+
+        .col-md-8
+          #nav-tabContent.tab-content
+            #list-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='list-home-list')
+              .card-header.bg-custome Сard-header
+              .card-body
+                h5.card-title Заголовок N1
+                p.card-text
+                  | Alias ducimus nobis expedita debitis perferendis optio aut, totam quam id laboriosam ipsum dolor aliquam ut repudiandae aliquid nihil eius nemo!
+            #list-profile.tab-pane.fade(role='tabpanel', aria-labelledby='list-profile-list')
+              .card-header.bg-custome Сard-header
+              .card-body
+                h5.card-title Заголовок N2
+                p.card-text
+                  | Alias ducimus nobis expedita debitis perferendis optio aut, totam quam id laboriosam ipsum dolor aliquam ut repudiandae aliquid nihil eius nemo!
+            #list-messages.tab-pane.fade(role='tabpanel', aria-labelledby='list-messages-list')
+              .card-header.bg-custome Сard-header
+              .card-body
+                h5.card-title Заголовок N3
+                p.card-text
+                  | Alias ducimus nobis expedita debitis perferendis optio aut, totam quam id laboriosam ipsum dolor aliquam ut repudiandae aliquid nihil eius nemo!

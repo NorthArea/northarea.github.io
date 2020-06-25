@@ -1,0 +1,53 @@
+block variables
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title #{title}
+    link(rel="stylesheet", type="text/css", href="css/style.css")
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-custome
+      .container
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbar.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item(class={active: currentUrl === '/index'})
+              a.nav-link(href='index.html') Apex
+            li.nav-item(class={active: currentUrl === '/service'})
+              a.nav-link(href='service.html') Обслуживание
+            li.nav-item(class={active: currentUrl === '/about'})
+              a.nav-link(href='about.html') О нас
+            li.nav-item(class={active: currentUrl === '/contact'})
+              a.nav-link(href='contact.html') Контакты
+          ul.navbar-nav.navbar-nav-left.ml-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                i.fab.fa-vk
+            li.nav-item.active
+              a.nav-link(href='#')
+                i.fab.fa-facebook
+            li.nav-item.active
+              a.nav-link(href='#')
+                i.fab.fa-twitter
+    block content
+    footer(style="text-align:center; color:white")
+      .container
+        a(href="https://northarea.ru/",target="_blank") NorthArea.ru
+        |&nbsp|&nbsp
+        a(href="https://github.com/NorthArea/",target="_blank") Github
+        |&nbsp &copy 2018
+    //script
+    script(type='text/javascript',src="js/main.js")
+    script.
+      $(document).ready(function () {
+        $(document).click(function (event) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("show");
+            if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                $(".navbar-toggler").click();
+            }
+        });
+      });

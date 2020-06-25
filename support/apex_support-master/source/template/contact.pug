@@ -1,0 +1,34 @@
+extends partials/layout.pug
+block variables
+  - var title = "Контакты"
+  - var currentUrl = "/contact"
+block content
+  main.main_contact.py-4
+    .container.py-4
+      h1.display-4 Контакты
+      form
+        .form-group
+          label(for='exampleFormControlInput1') Имя
+          input#exampleFormControlInput1.form-control(type='text')
+        .form-group
+          label(for='exampleFormControlInput1') Телефон
+          input#exampleFormControlInput1.form-control(type='text')
+        .form-group
+          label(for='exampleFormControlInput1') Email
+          input#exampleFormControlInput1.form-control(type='email', placeholder='name@example.com')
+        .form-group
+          label(for='exampleFormControlTextarea1') Текст сообщения
+          textarea#exampleFormControlTextarea1.form-control(rows='3')
+        button.btn.btn-primary(type='submit') Отправить
+
+  section.bg-custome.text-center.text-white
+    .container
+      .row
+        .col-md-8.mx-auto
+          h2 Подписаться на новостную рассылку
+          p Актуальные предложения и информация о готовящихся акциях.
+          hr
+          form
+            input.form-control.input-lg(type='text', placeholder='Email...')
+            br
+            button.btn.btn-primary.btn-lg.btn-block Подписаться

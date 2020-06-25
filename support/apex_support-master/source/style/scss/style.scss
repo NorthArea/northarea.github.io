@@ -1,0 +1,135 @@
+$main-color: #1a8c97;
+.bg-custome {
+  background: $main-color;
+  color: white!important;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+// Sticky Footer
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0;
+}
+
+// Navbar
+// Social icon
+.navbar-nav {
+  text-transform: uppercase;
+}
+
+.navbar {
+  font-size: 1.2rem;
+}
+
+.navbar-nav-left {
+  a {
+    font-size: 1.6rem;
+    padding: 0 8px;
+  }
+}
+
+// Toogle
+.navbar-toggler,
+.navbar-toggler {
+  outline: 1px solid;
+  &:focus {
+    outline: 1px solid;
+  }
+}
+
+main {
+  padding: 30px;
+  .container {
+    margin: auto;
+    background: white;
+    padding: 20px 30px;
+  }
+}
+
+section {
+  padding: 30px 0;
+  img {
+    width: 100%;
+  }
+  .btn-primary {
+    background: darken($main-color, 10%);
+    border: 0;
+    &:active {
+      background: darken($main-color, 10%);
+    }
+  }
+}
+
+footer {
+  background: darken($main-color, 10%);
+  a {
+    color: white;
+  }
+}
+
+.list-group-item.active {
+  background-color: $main-color;
+  border-color: $main-color;
+}
+
+// Home page
+.main_home {
+  background: url(../img/home.jpg) no-repeat;
+  background-position: 0 -100px;
+  min-height: 60vh;
+  opacity: 0.9;
+  @media (min-width: 760px) {
+    min-height: 70vh;
+  }
+  @media (min-width: 1280px) {
+    min-height: 80vh;
+  }
+}
+
+.section-b {
+  background: #e6ebf1;
+}
+
+// About
+.main_about {
+  background: url(../img/about.jpg);
+}
+
+// Service
+.main_service {
+  background: url(../img/service.jpg);
+}
+
+// Contact
+.main_contact {
+  background: url(../img/contact.jpg);
+}
+
+.main_home,
+.main_about,
+.main_service,
+.main_contact {
+  @media (min-width: 1920px) {
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
