@@ -1,0 +1,150 @@
+ul{
+  margin:0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  padding:0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.primaty_text{
+  color:#56a79a;
+}
+
+.primaty_background{
+  background:#56a79a;
+}
+
+.navbar{
+  border-bottom:1px solid #56a79a;
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+     outline: 1px solid;
+}
+
+#navbarCollapse{
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#888;
+}
+
+
+nav h2{
+  margin:0;
+}
+
+.active a, .navbar-nav a:hover{
+  color:#56a79a;
+  border-bottom:3px solid #56a79a;
+  padding-bottom:3px;
+}
+
+@media screen and (max-width: 768px){
+    .active a, .navbar-nav a:hover{
+    border-bottom:none;
+  }
+}
+
+section{
+  margin-bottom:2em;
+}
+
+.showcase{
+  background:none;
+  border-bottom:1px solid #56a79a;
+  background:url(../img/background-1.jpg) no-repeat 50% 50%;
+}
+
+@media screen and (min-width: 1921px){
+  .showcase{
+    background:url(../img/background-2.jpg) no-repeat 50% 50%;
+  }
+}
+
+.showcase .row{
+  height:25rem;
+}
+
+.showcase-content{
+  border-radius: 4em;
+  background:#333;
+  color:#fff;
+  opacity:0.9;
+}
+
+
+.card-img-top{
+  color:#56a79a;
+}
+
+.card-text{
+  color: #888;
+}
+
+
+svg{
+  width:100%;
+}
+
+.phone ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.info{
+  background:#333;
+}
+
+.info .btn{
+  background:#222;
+  color:white;
+}
+
+footer{
+  background:#222;
+}
+
+footer{
+  a{color:white;text-decoration: underline;}
+  a:hover{color:white}
+}
+
+.header-about, .header-service, .header-contact{
+  margin-top:.5rem;
+}
+
+.section-about, .section-service, .section-contact{
+  -webkit-box-flex:1;
+      -ms-flex:1 0 auto;
+          flex:1 0 auto;
+  margin-bottom: 2em;
+}
+
+.section-service ul{
+  list-style:none;
+  padding:0;
+}
+
+.section-service ul li{
+  list-style:none;
+  padding:1em;
+}
+
+.section-service ul li:nth-child(odd){
+  background:#333;
+  color:#fff;
+}
+
+.section-service ul li:nth-child(even){
+  background:#56a79a;
+  color:#fff;
+}

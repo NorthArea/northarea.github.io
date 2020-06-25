@@ -1,0 +1,44 @@
+extends ./partials/layout.pug
+block title
+  title AppTheme | About
+block content
+  nav.navbar.navbar-expand-md.navbar-light
+    .container
+      a.navbar-brand(href='index.html')
+        h2
+          span.primaty_text App
+          |Theme
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li.nav-item
+            a.nav-link(href='service.html') Service
+          li.nav-item.active
+            a.nav-link(href='about.html') About
+          li.nav-item
+            a.nav-link(href='contact.html') Contact
+  //- Header
+  .header-about
+    .container
+      .row
+        .col-12
+          h2 About Us
+  //- Content Section
+  section.section-about.text-center
+    .container
+      .row
+        .col-12
+          h4 
+            span.primaty_text Who
+            |&nbsp We are?
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum cum culpa, nam tempora rem veniam officiis facilis quae asperiores.
+          p Facere provident sunt consectetur temporibus officiis repellendus reiciendis consequatur facilis enim dolores vel deserunt ipsa veniam autem totam, numquam velit nulla at maiores rerum laudantium alias soluta voluptate impedit.
+          hr
+          h4 
+            span.primaty_text What
+            |&nbsp We do?
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum cum culpa, nam tempora rem veniam officiis facilis quae asperiores.
+          p Facere provident sunt consectetur temporibus officiis repellendus reiciendis consequatur facilis enim dolores vel deserunt ipsa veniam autem totam, numquam velit nulla at maiores rerum laudantium alias soluta voluptate impedit.

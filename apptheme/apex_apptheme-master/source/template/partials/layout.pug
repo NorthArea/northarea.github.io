@@ -1,0 +1,49 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(name="author" content="NorthArea")
+    block title
+    //- Fontawesome
+    script(defer='', src='img/icon.js', crossorigin='anonymous')
+    link(rel='stylesheet', href="css/style.css")
+  body
+    block content
+    //- Info
+    .info.text-white.py-5
+      .container
+        .row
+          .col-md-4
+            h4 Contact Us
+            ul
+              li &nbsp +7(952)-933-85-47
+              li &nbsp web@northarea.ru
+              li &nbsp г.Новосибирск
+          .col-md-4
+            h4 About us
+            p Tenetur mollitia exercitationem alias eum ea earum nulla harum illo sint.
+          .col-md-4
+            h4 Newsletter
+            .input-group.mb-3
+              input.form-control(type='text', placeholder="Recipient's username", aria-label="Recipient's username", aria-describedby='basic-addon2')
+              .input-group-append
+                button.btn.btn-222(type='button') Button
+    footer(style="text-align:center; color:white")
+        .container
+            a(href="https://northarea.ru/",target="_blank") NorthArea.ru
+            |&nbsp|&nbsp
+            a(href="https://github.com/NorthArea/",target="_blank") Github
+            |&nbsp &copy 2018
+    script(src="js/main.js")
+    script.
+      $(document).ready(function () {
+        $(document).click(function (event) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("show");
+            if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                $(".navbar-toggler").click();
+            }
+        });
+      });

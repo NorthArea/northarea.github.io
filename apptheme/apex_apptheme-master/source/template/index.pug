@@ -1,0 +1,108 @@
+extends ./partials/layout.pug
+block title
+  title AppTheme | Home
+block content
+  //- Bootstrap Nabar
+  nav.navbar.navbar-expand-md.navbar-light
+    .container
+      a.navbar-brand(href='index.html')
+        h2
+          span.primaty_text App
+          |Theme
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href='index.html') Home
+          li.nav-item
+            a.nav-link(href='service.html') Service
+          li.nav-item
+            a.nav-link(href='about.html') About
+          li.nav-item
+            a.nav-link(href='contact.html') Contact
+  //- Showcase
+  section.showcase
+    .container
+      .row.align-items-center.justify-content-center
+        .col-11.col-md-9.col-lg-7.col-xl-6.showcase-content.text-center.py-3
+          h1 Welcome
+            span.primaty_text &nbsp AppTheme
+          p Build with HTML5, CSS3, Bootstrap, PUG, SASS
+  //- Features
+  section.features.my-5
+    .container
+      .row.justify-content-center
+        .col-6.text-center
+          h2 Core Feature
+          p What's included?
+      //- row 1
+      .row
+        .col-sm-4
+          .card.text-center.border-0
+            .img.card-img-top
+              i.fas.fa-tachometer-alt.fa-3x
+            .card-body
+              h4.card-title Fully Optimize
+              p.card-text Expedita at esse qui, debitis fugit doloremque quis voluptatem?
+        .col-sm-4
+          .card.text-center.border-0
+            .img.card-img-top
+              i.far.fa-question-circle.fa-3x
+            .card-body
+              h4.card-title Free support
+              p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        .col-sm-4
+          .card.text-center.border-0
+            .img.card-img-top
+              i.fas.fa-space-shuttle.fa-3x
+            .card-body
+              h4.card-title Free upgrade
+              p.card-text Dolorum cum culpa, nam tempora rem veniam officiis facilis quae asperiores.
+      //- row 2
+      .row
+        .col-sm-4
+          .card.text-center.border-0
+            .img.card-img-top
+              i.fas.fa-chart-line.fa-3x
+            .card-body
+              h4.card-title Uptime Guarantee
+              p.card-text Dolorum cum culpa, nam tempora rem veniam officiis facilis quae asperiores.
+        .col-sm-4
+          .card.text-center.border-0
+            .img.card-img-top
+              i.fas.fa-users.fa-3x
+            .card-body
+              h4.card-title Multi-user
+              p.card-text Dolorum cum culpa, nam tempora rem veniam officiis facilis quae asperiores.
+        .col-sm-4
+          .card.text-center.border-0
+            .img.card-img-top
+              i.fas.fa-plug.fa-3x
+            .card-body
+              h4.card-title Plug & Play
+              p.card-text Dolorum cum culpa, nam tempora rem veniam officiis facilis quae asperiores.
+  //- Phone section
+  section.phone
+    .container
+      .row.align-items-center
+        .col-md-6
+          include ./partials/responsive.svg
+        .col-md-6.align-self-center.text-center
+          h2 Core Feature
+          ul
+            li Fully Optimize
+            li Free support
+            li Free upgrade
+            li Uptime Guarantee
+            li Multi-user
+            li Plug & Play
+  
+  
+  
+  
+  
+  
+  
+  
+  

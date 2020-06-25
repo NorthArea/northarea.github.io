@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3.2317in" height="25rem" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.1" viewBox="0 0 750 1486" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">.fil7 {fill:#FFF212} .fil3 {fill:#EC268F} .fil4 {fill:#ED3237} .fil5 {fill:#00AFEF} .fil6 {fill:#00A859} .fil0 {fill:#0C1B26} .fil1 {fill:#394E60} .fil8 {fill:#75B7B3} .fil2 {fill:white}</style>
+ </defs>
+ <path class="fil0" d="m750 1378c0 59-48 108-108 108h-534c-60 0-108-49-108-108v-1270c0-60 48-108 108-108h534c60 0 108 48 108 108v1270z"/>
+ <path class="fil1" d="m0 1378v-1270c0-60 48-108 108-108h534c60 0 108 48 108 108l-750 1270z"/>
+ <path class="fil0" d="m491 62c0 5-3 8-7 8h-202c-5 0-8-3-8-8 0-4 3-8 8-8h202c4 0 7 4 7 8z"/>
+ <path class="fil2" d="m712 1250c0 32-26 57-57 57h-561c-31 0-57-25-57-57v-1012c0-31 26-57 57-57h561c31 0 57 26 57 57v1012z"/>
+ <polygon class="fil3" points="692 448 59 448 59 275 692 275"/>
+ <polygon class="fil4" points="619 588 131 588 131 487 619 487"/>
+ <polygon class="fil5" points="210 1225 68 1225 68 1046 210 1046"/>
+ <polygon class="fil6" points="367 1225 225 1225 225 1046 367 1046"/>
+ <polygon class="fil7" points="524 1225 382 1225 382 1046 524 1046"/>
+ <polygon class="fil4" points="681 1225 539 1225 539 1046 681 1046"/>
+ <polygon class="fil8" points="681 647 69 647 69 629 681 629"/>
+ <polygon class="fil8" points="681 686 69 686 69 668 681 668"/>
+ <polygon class="fil8" points="681 725 69 725 69 707 681 707"/>
+ <polygon class="fil8" points="681 764 69 764 69 746 681 746"/>
+ <polygon class="fil8" points="681 803 69 803 69 785 681 785"/>
+ <polygon class="fil8" points="681 842 69 842 69 823 681 823"/>
+ <polygon class="fil8" points="681 880 69 880 69 862 681 862"/>
+ <polygon class="fil8" points="681 919 69 919 69 901 681 901"/>
+ <polygon class="fil8" points="681 958 69 958 69 940 681 940"/>
+ <polygon class="fil8" points="681 997 69 997 69 979 681 979"/>
+</svg>

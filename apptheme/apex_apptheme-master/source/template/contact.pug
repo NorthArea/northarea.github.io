@@ -1,0 +1,49 @@
+extends ./partials/layout.pug
+block title
+  title AppTheme | Contact
+block content
+  nav.navbar.navbar-expand-md.navbar-light
+    .container
+      a.navbar-brand(href='index.html')
+        h2
+          span.primaty_text App
+          |Theme
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li.nav-item
+            a.nav-link(href='service.html') Service
+          li.nav-item
+            a.nav-link(href='about.html') About
+          li.nav-item.active
+            a.nav-link(href='contact.html') Contact
+  .header-contact
+    .container
+      .row
+        .col-12
+          h2 Contact Us
+  section.section-about
+    .container
+      .row
+        .col-12
+          p Facere provident sunt consectetur temporibus officiis repellendus reiciendis consequatur facilis enim dolores.
+          form
+            .form-group
+              label(for='exampleFormControlInput1') Email address
+              input#exampleFormControlInput1.form-control(type='email', placeholder='name@example.com')
+            .form-group
+              label(for='exampleFormControlSelect1') Example select
+              select#exampleFormControlSelect1.form-control
+                option Option #1
+                option Option #2
+                option Option #3
+                option Option #4
+                option Option #5
+            .form-group
+              label(for='exampleFormControlTextarea1') Example textarea
+              textarea#exampleFormControlTextarea1.form-control(rows='3')
+            .form-group
+              button.btn.btn-primary(type='submit') Button

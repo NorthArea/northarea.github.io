@@ -1,0 +1,46 @@
+extends ./partials/layout.pug
+block title
+  title AppTheme | Service
+block content
+  nav.navbar.navbar-expand-md.navbar-light
+    .container
+      a.navbar-brand(href='index.html')
+        h2
+          span.primaty_text App
+          |Theme
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li.nav-item.active
+            a.nav-link(href='service.html') Service
+          li.nav-item
+            a.nav-link(href='about.html') About
+          li.nav-item
+            a.nav-link(href='contact.html') Contact
+  //- Subheader
+  .header-service
+    .container
+      .row
+        .col-12
+          h2 Service
+  //- Content Section
+  section.section-service.text-center
+    .container
+      .row
+        .col-12
+          h4 
+            span.primaty_text What
+            |&nbsp We offer
+          ul
+            li
+              h5 Web design & Development
+              p Facere provident sunt consectetur temporibus officiis repellendus reiciendis consequatur facilis enim dolores vel deserunt ipsa veniam autem totam, numquam velit.Maiores possimus vitae facilis perferendis assumenda minima temporibus corrupti aut aspernatur impedit ex quasi animi nobis error architecto odit debitis facere sapiente harum placeat totam magni voluptatem officia.
+            li
+              h5 Software development
+              p Facere provident sunt consectetur temporibus officiis repellendus reiciendis consequatur facilis enim dolores vel deserunt ipsa veniam autem totam, numquam velit.Maiores possimus vitae facilis perferendis assumenda minima temporibus corrupti aut aspernatur impedit ex quasi animi nobis error architecto odit debitis facere sapiente harum placeat totam magni voluptatem officia.
+            li
+              h5 Graphic design
+              p Facere provident sunt consectetur temporibus officiis repellendus reiciendis consequatur facilis enim dolores vel deserunt ipsa veniam autem totam, numquam velit.Maiores possimus vitae facilis perferendis assumenda minima temporibus corrupti aut aspernatur impedit ex quasi animi nobis error architecto odit debitis facere sapiente harum placeat totam magni voluptatem officia.
