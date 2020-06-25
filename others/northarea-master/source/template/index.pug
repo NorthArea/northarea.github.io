@@ -1,0 +1,56 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title NorthArea | Создание, продвижение, обслуживание, поисковая оптимизация.
+    link(rel='apple-touch-icon', sizes='57x57', href='img/icon/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='img/icon/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='img/icon/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='img/icon/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='img/icon/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='img/icon/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='img/icon/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='img/icon/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='img/icon/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='img/icon/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='img/icon/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='img/icon/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='img/icon/favicon-16x16.png')
+    link(rel='manifest', href='img/icon/manifest.json')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='img/icon/ms-icon-144x144.png')
+    meta(name='theme-color', content='#ffffff')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+    link(href='css/style.css', rel='stylesheet')
+    style.
+      body{
+        font-family: 'Open Sans', sans-serif;
+      }
+  body#page-top
+    // Navigation
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#page-top') NorthArea
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          | Menu
+          i.fas.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#about') About
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#projects') Projects
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#signup') Contact
+    // Header
+    header.masthead
+      .container.d-flex.h-100.align-items-center
+        .mx-auto.text-center
+          h1.mx-auto.my-0.text-uppercase NorthArea
+          h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
+          a.btn.btn-primary.js-scroll-trigger(href='#about') Get Started
+
+    script(src='js/main.js')
