@@ -1,0 +1,31 @@
+extends partials/layout.pug
+block variables
+  - var name = 'contact'
+  - var title = "Контакты"
+block content
+  // Title Page
+  section.bg-title-page.p-t-40.p-b-50.flex-col-c-m(style='background-image: url(img/heading-pages-06.jpg);')
+    h2.l-text2.t-center
+      | Контакты
+  // content page
+  section.bgwhite.p-t-66.p-b-60
+    .container
+      .row
+        .col-md-6.p-b-30
+          .p-r-20.p-r-0-lg
+            script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ad83ae3e3a13c3a69428ff96564aca6fb1e17ddbe0a849db0eeac79bfb91bd7&width=100%25&height=400&lang=ru_RU&scroll=true')
+        .col-md-6.p-b-30
+          form.leave-comment
+            h4.m-text26.p-b-36.p-t-15
+              | Отправить сообщение
+            .bo4.of-hidden.size15.m-b-20
+              input.sizefull.s-text7.p-l-22.p-r-22(type='text', name='name', placeholder='Имя')
+            .bo4.of-hidden.size15.m-b-20
+              input.sizefull.s-text7.p-l-22.p-r-22(type='text', name='phone-number', placeholder='Телефонный номер')
+            .bo4.of-hidden.size15.m-b-20
+              input.sizefull.s-text7.p-l-22.p-r-22(type='text', name='email', placeholder='Email')
+            textarea.dis-block.s-text7.size20.bo4.p-l-22.p-r-22.p-t-13.m-b-20(name='message', placeholder='Сообщение')
+            .w-size25
+              // Button
+              button.flex-c-m.size2.bg1.bo-rad-23.hov1.m-text3.trans-0-4
+                | Отправить

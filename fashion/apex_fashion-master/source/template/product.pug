@@ -1,0 +1,326 @@
+extends partials/layout.pug
+block variables
+  - var name = 'product'
+  - var title = "Магазин"
+block content
+  // Title Page
+  section.bg-title-page.p-t-50.p-b-40.flex-col-c-m(style='background-image: url(images/heading-pages-02.jpg);')
+    h2.l-text2.t-center
+      | Женская Коллекция
+    p.m-text13.t-center
+      | Новые Поступления
+  // Content page
+  section.bgwhite.p-t-55.p-b-65
+    .container
+      .row
+        .col-sm-6.col-md-4.col-lg-3.p-b-50
+          .leftbar.p-r-20.p-r-0-sm
+            // 
+            h4.m-text14.p-b-7
+              | Категории
+            ul.p-b-54
+              li.p-t-4
+                a.s-text13.active1(href='#')
+                  | Все
+              li.p-t-4
+                a.s-text13(href='index.html')
+                  | Женщины
+              li.p-t-4
+                a.s-text13(href='female.html')
+                  | Мужчины
+              li.p-t-4
+                a.s-text13(href='male.html')
+                  | Дети
+              li.p-t-4
+                a.s-text13(href='index.html')
+                  | Аксессуары
+            // 
+            h4.m-text14.p-b-32
+              | Фильтры
+            .filter-price.p-t-22.p-b-50.bo3
+              .m-text15.p-b-17
+                | Цена
+              .wra-filter-bar
+                #filter-bar
+              .flex-sb-m.flex-w.p-t-16
+                .w-size11
+                  // Button
+                  button.flex-c-m.size4.bg7.bo-rad-15.hov1.s-text14.trans-0-4
+                    | Filter
+                .s-text3.p-t-10.p-b-10
+                  | Значение:
+                  span#value-lower 610Р
+                  |  - 
+                  span#value-upper 9800Р
+            .filter-color.p-t-22.p-b-50.bo3
+              .m-text15.p-b-12
+                | Цвет
+              ul.flex-w
+                li.m-r-10
+                  input#color-filter1.checkbox-color-filter(type='checkbox', name='color-filter1')
+                  label.color-filter.color-filter1(for='color-filter1')
+                li.m-r-10
+                  input#color-filter2.checkbox-color-filter(type='checkbox', name='color-filter2')
+                  label.color-filter.color-filter2(for='color-filter2')
+                li.m-r-10
+                  input#color-filter3.checkbox-color-filter(type='checkbox', name='color-filter3')
+                  label.color-filter.color-filter3(for='color-filter3')
+                li.m-r-10
+                  input#color-filter4.checkbox-color-filter(type='checkbox', name='color-filter4')
+                  label.color-filter.color-filter4(for='color-filter4')
+                li.m-r-10
+                  input#color-filter5.checkbox-color-filter(type='checkbox', name='color-filter5')
+                  label.color-filter.color-filter5(for='color-filter5')
+                li.m-r-10
+                  input#color-filter6.checkbox-color-filter(type='checkbox', name='color-filter6')
+                  label.color-filter.color-filter6(for='color-filter6')
+            .search-product.pos-relative.bo4.of-hidden
+              input.s-text7.size6.p-l-23.p-r-50(type='text', name='search-product', placeholder='Найти...')
+              button.flex-c-m.size5.ab-r-m.color2.color0-hov.trans-0-4
+                i.fs-12.fa.fa-search(aria-hidden='true')
+        .col-sm-6.col-md-8.col-lg-9.p-b-50
+          // 
+          .flex-sb-m.flex-w.p-b-35
+            .flex-w
+              .rs2-select2.of-hidden.w-size12.m-t-5.m-b-5.m-r-10
+                select.form-control(name='sorting')
+                  option Сортировать
+                  option Популярность
+                  option Цена: низкая - высокая
+                  option Цена: высокая - низкая
+              .rs2-select2.of-hidden.w-size12.m-t-5.m-b-5.m-r-10
+                select.form-control(name='sorting')
+                  option Цена
+                  option 0р - 500р
+                  option 500р - 1000р
+                  option 1000р - 1500р
+                  option 1500р - 2000р
+                  option 2000р+
+            span.s-text8.p-t-5.p-b-5
+              | Количество 1&ndash;12 из 16 результатов
+          // Product
+          .row
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative.block2-labelnew
+                  img(src='img/female/gallery01.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Женский пиджак
+                  span.block2-price.m-text6.p-r-5
+                    | 2350р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative
+                  img(src='img/male/gallery01.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Мужской желет
+                  span.block2-price.m-text6.p-r-5
+                    | 3550Р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative
+                  img(src='img/female/gallery02.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Женская Сумка
+                  span.block2-price.m-text6.p-r-5
+                    | 990р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative.block2-labelsale
+                  img(src='img/male/gallery02.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Мужская рубашка
+                  span.block2-oldprice.m-text7.p-r-5
+                    | 1750р
+                  span.block2-newprice.m-text8.p-r-5
+                    | 1250р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative.block2-labelnew
+                  img(src='img/female/gallery03.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Женская сумка, клатч
+                  span.block2-price.m-text6.p-r-5
+                    | 2899р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative
+                  img(src='img/male/gallery03.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Костюм
+                  span.block2-price.m-text6.p-r-5
+                    | 5580Р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative.block2-labelnew
+                  img(src='img/female/gallery04.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Женская Сумка
+                  span.block2-price.m-text6.p-r-5
+                    | 3820р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative
+                  img(src='img/male/gallery04.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Мужские Часы
+                  span.block2-price.m-text6.p-r-5
+                    | 5690Р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative
+                  img(src='img/female/gallery05.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Женский Рюкзак
+                  span.block2-price.m-text6.p-r-5
+                    | 3990р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative.block2-labelsale
+                  img(src='img/male/gallery05.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Черная Футболка
+                  span.block2-oldprice.m-text7.p-r-5
+                    | 890Р
+                  span.block2-newprice.m-text8.p-r-5
+                    | 590Р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative.block2-labelnew
+                  img(src='img/female/gallery07.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Летнее Плать
+                  span.block2-price.m-text6.p-r-5
+                    | 3990р
+            .col-sm-12.col-md-6.col-lg-4.p-b-50
+              // Block2
+              .block2
+                .block2-img.wrap-pic-w.of-hidden.pos-relative
+                  img(src='img/male/gallery07.jpg', alt='IMG-PRODUCT')
+                  .block2-overlay.trans-0-4
+                    a.block2-btn-addwishlist.hov-pointer.trans-0-4(href='#')
+                      i.icon-wishlist.icon_heart_alt(aria-hidden='true')
+                      i.icon-wishlist.icon_heart.dis-none(aria-hidden='true')
+                    .block2-btn-addcart.w-size1.trans-0-4
+                      // Button
+                      button.flex-c-m.size1.bg4.bo-rad-23.hov1.s-text1.trans-0-4
+                        | В Корзину
+                .block2-txt.p-t-20
+                  a.block2-name.dis-block.s-text3.p-b-5(href='product-detail.html')
+                    | Стильная Футболка
+                  span.block2-price.m-text6.p-r-5
+                    | 1200р
+          // Pagination
+          .pagination.flex-m.flex-w.p-t-26
+            a.item-pagination.flex-c-m.trans-0-4.active-pagination(href='#') 1
+            a.item-pagination.flex-c-m.trans-0-4(href='#') 2

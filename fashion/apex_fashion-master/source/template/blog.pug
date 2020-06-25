@@ -1,0 +1,212 @@
+extends partials/layout_blog.pug
+block variables
+  - var name = 'blog'
+  - var title = "Блог"
+block content
+  // content page
+  section.bgwhite.p-t-60
+    .container
+      .row
+        .col-md-8.col-lg-9.p-b-75
+          .p-r-50.p-r-0-lg
+            // item blog
+            .item-blog.p-b-80
+              a.item-blog-img.pos-relative.dis-block.hov-img-zoom(href='blog-detail.html')
+                img(src='img/blog01.jpg', alt='IMG-BLOG')
+                span.item-blog-date.dis-block.flex-c-m.pos1.size17.bg4.s-text1
+                  | 28 Дек.
+              .item-blog-txt.p-t-33
+                h4.p-b-11
+                  a.m-text24(href='blog-detail.html')
+                    | Черная пятница: Скидки и Распродажи
+                .s-text8.flex-w.flex-m.p-b-21
+                  span
+                    | Admin
+                    span.m-l-3.m-r-6 |
+                  span
+                    | Cooking, Food
+                    span.m-l-3.m-r-6 |
+                  span
+                    | 8 Комментариев
+                p.p-b-12
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aspernatur natus at, praesentium veniam amet, velit maiores repellendus a maxime?
+                a.s-text20(href='blog-detail.html')
+                  | Читать дальше
+                  i.fa.fa-long-arrow-right.m-l-8(aria-hidden='true')
+            // item blog
+            .item-blog.p-b-80
+              a.item-blog-img.pos-relative.dis-block.hov-img-zoom(href='blog-detail.html')
+                img(src='img/blog02.jpg', alt='IMG-BLOG')
+                span.item-blog-date.dis-block.flex-c-m.pos1.size17.bg4.s-text1
+                  | 26 Дек.
+              .item-blog-txt.p-t-33
+                h4.p-b-11
+                  a.m-text24(href='blog-detail.html')
+                    | Обувь классического фасона в 21 веке
+                .s-text8.flex-w.flex-m.p-b-21
+                  span
+                    | By Admin
+                    span.m-l-3.m-r-6 |
+                  span
+                    | Fashion, Life style
+                    span.m-l-3.m-r-6 |
+                  span
+                    | 8 Комментариев
+                p.p-b-12
+                  | Ea aut voluptate voluptatibus error repudiandae in, quaerat.
+                a.s-text20(href='blog-detail.html')
+                  | Читать дальше
+                  i.fa.fa-long-arrow-right.m-l-8(aria-hidden='true')
+            // item blog
+            .item-blog.p-b-80
+              a.item-blog-img.pos-relative.dis-block.hov-img-zoom(href='blog-detail.html')
+                img(src='img/blog03.jpg', alt='IMG-BLOG')
+                span.item-blog-date.dis-block.flex-c-m.pos1.size17.bg4.s-text1
+                  | 22 Дек.
+              .item-blog-txt.p-t-33
+                h4.p-b-11
+                  a.m-text24(href='blog-detail.html')
+                    | Неделя высокой моды в Нью Йорке
+                .s-text8.flex-w.flex-m.p-b-21
+                  span
+                    | By Admin
+                    span.m-l-3.m-r-6 |
+                  span
+                    | Мода, Скидки
+                    span.m-l-3.m-r-6 |
+                  span
+                    | 8 Комментариев
+                p.p-b-12
+                  | Corrupti temporibus aspernatur ratione voluptatum velit qui ut sequi doloremque, saepe porro dolore.
+                a.s-text20(href='blog-detail.html')
+                  | Читать дальше
+                  i.fa.fa-long-arrow-right.m-l-8(aria-hidden='true')
+          // Pagination
+          .pagination.flex-m.flex-w.p-r-50
+            a.item-pagination.flex-c-m.trans-0-4.active-pagination(href='#') 1
+            a.item-pagination.flex-c-m.trans-0-4(href='#') 2
+        .col-md-4.col-lg-3.p-b-75
+          .rightbar
+            // Search
+            .pos-relative.bo11.of-hidden
+              input.s-text7.size16.p-l-23.p-r-50(type='text', name='search-product', placeholder='Search')
+              button.flex-c-m.size5.ab-r-m.color1.color0-hov.trans-0-4
+                i.fs-13.fa.fa-search(aria-hidden='true')
+            // Categories
+            h4.m-text23.p-t-56.p-b-34
+              | Категории
+            ul
+              li.p-t-6.p-b-8.bo6
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Мода
+              li.p-t-6.p-b-8.bo7
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Красота
+              li.p-t-6.p-b-8.bo7
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Стиль
+              li.p-t-6.p-b-8.bo7
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Крафт
+            // Featured Products
+            h4.m-text23.p-t-65.p-b-34
+              | Специальные предложения
+            ul.bgwhite
+              li.flex-w.p-b-20
+                a.dis-block.wrap-pic-w.w-size22.m-r-20.trans-0-4.hov4(href='product-detail.html')
+                  img(src='img/female/gallery05.jpg', alt='IMG-PRODUCT')
+                .w-size23.p-t-5
+                  a.s-text20(href='product-detail.html')
+                    | White Shirt With Pleat Detail Back
+                  span.dis-block.s-text17.p-t-6
+                    | $19.00
+              li.flex-w.p-b-20
+                a.dis-block.wrap-pic-w.w-size22.m-r-20.trans-0-4.hov4(href='product-detail.html')
+                  img(src='img/male/gallery01.jpg', alt='IMG-PRODUCT')
+                .w-size23.p-t-5
+                  a.s-text20(href='product-detail.html')
+                    | Converse All Star Hi Black Canvas
+                  span.dis-block.s-text17.p-t-6
+                    | $39.00
+              li.flex-w.p-b-20
+                a.dis-block.wrap-pic-w.w-size22.m-r-20.trans-0-4.hov4(href='product-detail.html')
+                  img(src='img/female/gallery02.jpg', alt='IMG-PRODUCT')
+                .w-size23.p-t-5
+                  a.s-text20(href='product-detail.html')
+                    | Nixon Porter Leather Watch In Tan
+                  span.dis-block.s-text17.p-t-6
+                    | $17.00
+              li.flex-w.p-b-20
+                a.dis-block.wrap-pic-w.w-size22.m-r-20.trans-0-4.hov4(href='product-detail.html')
+                  img(src='img/male/gallery03.jpg', alt='IMG-PRODUCT')
+                .w-size23.p-t-5
+                  a.s-text20(href='product-detail.html')
+                    | Denim jacket blue
+                  span.dis-block.s-text17.p-t-6
+                    | $39.00
+              li.flex-w.p-b-20
+                a.dis-block.wrap-pic-w.w-size22.m-r-20.trans-0-4.hov4(href='product-detail.html')
+                  img(src='img/female/gallery04.jpg', alt='IMG-PRODUCT')
+                .w-size23.p-t-5
+                  a.s-text20(href='product-detail.html')
+                    | Nixon Porter Leather Watch In Tan
+                  span.dis-block.s-text17.p-t-6
+                    | $17.00
+            // Archive
+            h4.m-text23.p-t-50.p-b-16
+              | Архив
+            ul
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Июль
+                span.s-text13
+                  | (9)
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Июнь
+                span.s-text13
+                  | (39)
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Май
+                span.s-text13
+                  | (29)
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Апрель
+                span.s-text13
+                  | (35)
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Март
+                span.s-text13
+                  | (22)
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Февраль
+                span.s-text13
+                  | (32)
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Январь
+                span.s-text13
+                  | (21)
+              li.flex-sb-m
+                a.s-text13.p-t-5.p-b-5(href='#')
+                  | Декабрь
+                span.s-text13
+                  | (26)
+            // Tags
+            h4.m-text23.p-t-50.p-b-25
+              | Tags
+            .wrap-tags.flex-w
+              a.tag-item(href='#')
+                | Мода
+              a.tag-item(href='#')
+                | Стиль
+              a.tag-item(href='#')
+                | Джинсы
+              a.tag-item(href='#')
+                | Streetstyle
+              a.tag-item(href='#')
+                | Крафт

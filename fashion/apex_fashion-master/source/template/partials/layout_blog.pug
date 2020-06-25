@@ -1,0 +1,221 @@
+block variables
+doctype html
+html(lang='ru')
+  head
+    title #{title}
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    // ===============================================================================================
+  body.animsition
+    // Header
+    header.header1
+      // Header desktop
+      .container-menu-header
+        .topbar
+          .topbar-social
+            a.topbar-social-item.fa.fa-facebook(href='#')
+            a.topbar-social-item.fa.fa-instagram(href='#')
+            a.topbar-social-item.fa.fa-pinterest-p(href='#')
+            a.topbar-social-item.fa.fa-snapchat-ghost(href='#')
+            a.topbar-social-item.fa.fa-youtube-play(href='#')
+          span.topbar-child1
+            | Бесплатная доставка при заказе от 1000₽
+          .topbar-child2
+            span.topbar-email
+              | web@northarea.ru
+            .topbar-language.rs1-select2
+              select.form-control.form-control-sm
+                option RUB
+                option USD
+                option EUR
+            
+        .wrap_header
+          // Logo
+          a.logo(href='index.html') Apex
+            span.logo_span Fashion
+          // Menu
+          .wrap_menu
+            nav.menu
+              ul.main_menu
+                li
+                  span.menu_collection Коллекции
+                  ul.sub_menu
+                    li
+                      a(href='male.html') Мужская
+                    li
+                      a(href='female.html') Женская
+                li
+                  a(href='product.html') Магазин
+                li.sale-noti
+                  a(href='product.html') Скидки
+                li
+                  a(href='cart.html') Корзина
+                li
+                  a(href='blog.html') Блог
+                li
+                  a(href='about.html') О нас
+                li
+                  a(href='contact.html') Контакты
+          // Header Icon
+          .header-icons
+            span.header-wrapicon1.dis-block
+              img.header-icon1.js-show-header-dropdown(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAAYFBMVEVHcEyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhFGJ7PAAAAIHRSTlMAqiF6tCWILBTPRT2AV6ZnT5SvrcMEvy9JNRxHDXFfxwthzYIAAAETSURBVBgZBcAHdoIwAADQHwgZsilDRdv737IPgDKmKUxpLAAA+ri3j67pHu0eewBQQsgAcggFgKveAOCuF0CuDeR22lIGTc1AqR3Kz/bbNfe5fw90tYDwxHEuwGdY4RmgD7CsAM43hB4xQ7oBDAvkSNnB+gIwz2AvxhYMC4B5Bu0o3eD3C6AdwZ1MHZgHAMMMukl8g60D0GzgHU0dWB8AHivoJukBmnoBrtqAOxlbYEmAtADtqOzApx7gqB9gL8QMtDOYWyBH9AF4rWB9AaGH8ATLAIYFPAMotcMRX+AVD3S1ALk2mvgFtGejqRngqtvZA+jPn3oBUMKWAeQtFADQx7/hzk2+h7/YAwAoY5rClMYC4B9qFwv33NTSfQAAAABJRU5ErkJggg==')
+            span.linedivide1
+            .header-wrapicon2
+              img.header-icon1.js-show-header-dropdown(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAbCAMAAACkwzTUAAAAYFBMVEVHcEyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhFGJ7PAAAAIHRSTlMA0Klnhj5LuxDNIJMpAgsVMbbCnwN859t3WnJJjtiaoLRsAtwAAACjSURBVBgZZcAJDoMgEEDRDwzUwV27r/e/ZWNIo04fP7H2dWTvOPuYo5+PbMmJxUnY6FzLonUdq1hT1JFVEgpJrJJQSKKQl+rlrMX5ovoS4DNAEgpJMMyAz9A3FE0P2QNjz14/AlPHXjcBDssBDssBiuUAxXLQKpa2VBPWVJFHrDHTeCzfMLyx3gPxifWMJMGSxO2Kdb0RAlYI3ENlhTuPw7/HF0RlBtUPk/IhAAAAAElFTkSuQmCC')
+              span.header-icons-noti 2
+              // Header cart noti
+              .header-cart.header-dropdown
+                ul.header-cart-wrapitem
+                  li.header-cart-item
+                    .header-cart-item-img
+                      img(src='img/cart01.jpg', alt='IMG')
+                    .header-cart-item-txt
+                      a.header-cart-item-name(href='#')
+                        | Nike Air One
+                      span.header-cart-item-info
+                        | 1 x 4650р
+                  li.header-cart-item
+                      .header-cart-item-img
+                        img(src='img/cart02.jpg', alt='IMG')
+                      .header-cart-item-txt
+                        a.header-cart-item-name(href='#')
+                          | Женская сумка
+                        span.header-cart-item-info
+                          | 1 x 3820р
+                .header-cart-total
+                  | Всего: 8470р
+                .header-cart-buttons
+                  .header-cart-wrapbtn
+                    // Button
+                    a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='cart.html')
+                      | Корзина
+                  .header-cart-wrapbtn
+                    // Button
+                    a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='#')
+                      | Оформить
+      // Header Mobile
+      .wrap_header_mobile
+        // Logo moblie
+        a.logo-mobile(href='index.html') Apex
+            span.logo_span Fashion
+        // Button show menu
+        .btn-show-menu
+          // Header Icon mobile
+          .header-icons-mobile
+            span.header-wrapicon1.dis-block
+              img.header-icon1.js-show-header-dropdown(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAAYFBMVEVHcEyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhFGJ7PAAAAIHRSTlMAqiF6tCWILBTPRT2AV6ZnT5SvrcMEvy9JNRxHDXFfxwthzYIAAAETSURBVBgZBcAHdoIwAADQHwgZsilDRdv737IPgDKmKUxpLAAA+ri3j67pHu0eewBQQsgAcggFgKveAOCuF0CuDeR22lIGTc1AqR3Kz/bbNfe5fw90tYDwxHEuwGdY4RmgD7CsAM43hB4xQ7oBDAvkSNnB+gIwz2AvxhYMC4B5Bu0o3eD3C6AdwZ1MHZgHAMMMukl8g60D0GzgHU0dWB8AHivoJukBmnoBrtqAOxlbYEmAtADtqOzApx7gqB9gL8QMtDOYWyBH9AF4rWB9AaGH8ATLAIYFPAMotcMRX+AVD3S1ALk2mvgFtGejqRngqtvZA+jPn3oBUMKWAeQtFADQx7/hzk2+h7/YAwAoY5rClMYC4B9qFwv33NTSfQAAAABJRU5ErkJggg==')
+            span.linedivide2
+            .header-wrapicon2
+              img.header-icon1.js-show-header-dropdown(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAbCAMAAACkwzTUAAAAYFBMVEVHcEyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhFGJ7PAAAAIHRSTlMA0Klnhj5LuxDNIJMpAgsVMbbCnwN859t3WnJJjtiaoLRsAtwAAACjSURBVBgZZcAJDoMgEEDRDwzUwV27r/e/ZWNIo04fP7H2dWTvOPuYo5+PbMmJxUnY6FzLonUdq1hT1JFVEgpJrJJQSKKQl+rlrMX5ovoS4DNAEgpJMMyAz9A3FE0P2QNjz14/AlPHXjcBDssBDssBiuUAxXLQKpa2VBPWVJFHrDHTeCzfMLyx3gPxifWMJMGSxO2Kdb0RAlYI3ENlhTuPw7/HF0RlBtUPk/IhAAAAAElFTkSuQmCC')
+              span.header-icons-noti 2
+              // Header cart noti
+              .header-cart.header-dropdown
+                ul.header-cart-wrapitem
+                  li.header-cart-item
+                    .header-cart-item-img
+                      img(src='img/cart01.jpg', alt='IMG')
+                    .header-cart-item-txt
+                      a.header-cart-item-name(href='#')
+                        | Nike Air One
+                      span.header-cart-item-info
+                        | 1 x 4650р
+                  li.header-cart-item
+                      .header-cart-item-img
+                        img(src='img/cart02.jpg', alt='IMG')
+                      .header-cart-item-txt
+                        a.header-cart-item-name(href='#')
+                          | Женская сумка
+                        span.header-cart-item-info
+                          | 1 x 3820р
+                .header-cart-total
+                  | Всего: 8470р
+                .header-cart-buttons
+                  .header-cart-wrapbtn
+                    // Button
+                    a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='cart.html')
+                      | Корзина
+                  .header-cart-wrapbtn
+                    // Button
+                    a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='#')
+                      | Оформить
+          .btn-show-menu-mobile.hamburger.hamburger--squeeze
+            span.hamburger-box
+              span.hamburger-inner
+      // Menu Mobile
+      .wrap-side-menu
+        nav.side-menu
+          ul.main-menu
+            li.item-topbar-mobile.p-l-20.p-t-8.p-b-8
+              span.topbar-child1
+                | Бесплатная доставка при заказе от 1000₽
+            li.item-topbar-mobile.p-l-20.p-t-8.p-b-8
+              .topbar-child2-mobile
+                span.topbar-email
+                  | web@northarea.ru
+                .topbar-language.rs1-select2
+                  select.form-control.form-control-sm
+                    option RUB
+                    option USD
+                    option EUR
+            li.item-topbar-mobile.p-l-10
+              .topbar-social-mobile
+                a.topbar-social-item.fa.fa-facebook(href='#')
+                a.topbar-social-item.fa.fa-instagram(href='#')
+                a.topbar-social-item.fa.fa-pinterest-p(href='#')
+                a.topbar-social-item.fa.fa-snapchat-ghost(href='#')
+                a.topbar-social-item.fa.fa-youtube-play(href='#')
+            li.item-menu-mobile
+              span.menu_collection Коллекции
+              ul.sub-menu
+                li
+                  a(href='male.html') Мужская
+                li
+                  a(href='female.html') Женская
+              i.arrow-main-menu.fa.fa-angle-right(aria-hidden='true')
+            li.item-menu-mobile
+              a(href='product.html') Магазин
+            li.item-menu-mobile
+              a(href='product.html') Скидки
+            li.item-menu-mobile
+              a(href='cart.html') Корзина
+            li.item-menu-mobile
+              a(href='blog.html') Блог
+            li.item-menu-mobile
+              a(href='about.html') О нас
+            li.item-menu-mobile
+              a(href='contact.html') Контакты
+    // breadcrumb
+    .bread-crumb.bgwhite.flex-w.p-l-52.p-r-15.p-t-30.p-l-15-sm
+      a.s-text16(href='index.html')
+        | Главная
+        i.fa.fa-angle-right.m-l-8.m-r-9(aria-hidden='true')
+      a.s-text16(href='blog.html')
+        | Блог
+        i.fa.fa-angle-right.m-l-8.m-r-9(aria-hidden='true')
+      if name == 'blog-detail'
+        span.s-text17
+          | Черная пятница: Скидки и Распродажи
+    block content
+    include instagram.pug
+    include footer.pug
+    // Back to top
+    #myBtn.btn-back-to-top.bg0-hov
+      span.symbol-btn-back-to-top
+        i.fa.fa-angle-double-up(aria-hidden='true')
+    // ===============================================================================================
+    script(src='js/main.js')
+    script.
+      $('.block2-btn-addcart').each(function(){
+      var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+      $(this).on('click', function(){
+      swal(nameProduct, "Товар добавлен в Корзину", "success");
+      });
+      });
+      $('.block2-btn-addwishlist').each(function(){
+      var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+      $(this).on('click', function(){
+      swal(nameProduct, "Товар добавлен в ваш список", "success");
+      });
+      });
